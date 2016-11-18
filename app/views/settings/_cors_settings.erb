@@ -1,33 +1,28 @@
 <p>
   <%=content_tag(:label, l(:label_cors_domain) + ":") %>
   <%=text_field_tag "settings[cors_domain]", @settings["cors_domain"], :size => 100 %><br/>
-  <br/>
   <%= l(:description_cors_domain) %>
 </p>
 <p>
   <%=content_tag(:label, l(:label_cors_headers) + ":") %>
   <%=text_field_tag "settings[cors_headers]", @settings["cors_headers"], :size => 100 %><br/>
-  <br/>
   <%= l(:description_cors_headers) %>
 </p>
 
 <p>
   <%=content_tag(:label, l(:label_cors_methods) + ":") %>
   <%=text_field_tag "settings[cors_methods]", @settings["cors_methods"], :size => 100 %><br/>
-  <br/>
   <%= l(:description_cors_methods) %>
 </p>
 
 <p>
   <%=content_tag(:label, l(:label_cors_maxage) + ":") %>
   <%=text_field_tag "settings[cors_maxage]", @settings["cors_maxage"], :size => 100 %><br/>
-  <br/>
   <%= l(:description_cors_maxage) %>
 </p>
 
 <p>
   <%=content_tag(:label, l(:label_cors_credentials) + ":") %>
   <%=check_box_tag "settings[cors_credentials]", '1', @settings["cors_credentials"] %><br/>
-  <br/>
   <%= l(:description_cors_credentials) %>
 </p>
