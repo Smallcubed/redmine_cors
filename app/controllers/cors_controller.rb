@@ -15,6 +15,10 @@ class CorsController < ApplicationController
         end
     end
     headers['Vary'] = 'Origin'
-    render :text => 'WTF?', :content_type => 'text/plain', :status => 200
+    # render :text => 'WTF?', :content_type => 'text/plain', :status => 200
+    respond_to do |format|      
+      format.api {}
+    end      
+
   end
 end
