@@ -1,5 +1,5 @@
 class CorsController < ApplicationController
-  skip_before_filter :session_expiration, :user_setup, :check_if_login_required, :set_localization
+  skip_before_action :session_expiration, :user_setup, :check_if_login_required, :set_localization
 
   def preflight
     allowed_origins = Setting.plugin_redmine_cors["cors_domain"].to_s.downcase.split(/[ ,]/).reject { |c| c.empty? }
