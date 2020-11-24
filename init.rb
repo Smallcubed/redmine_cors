@@ -15,12 +15,12 @@ end
 
 Redmine::Plugin.register :redmine_cors do
   name 'Redmine CORS'
-  author 'Marco Vito Moscaritolo (original author)'
+  author 'Marco Vito Moscaritolo (maintained by SmallCubed)'
   description 'This is a plugin for Redmine to allow CORS requests.'
   url 'http://github.com/smallcubed/redmine_cors'
   author_url 'http://mavimo.org/'
 
-  version '0.0.1'
+  version '0.0.2'
   requires_redmine :version_or_higher => '2.0.0'
 
   settings :partial => 'settings/cors_settings',
